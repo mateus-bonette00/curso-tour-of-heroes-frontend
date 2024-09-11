@@ -7,11 +7,14 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MessagesComponent } from './messages/messages.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout'
 // Angular Material
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +29,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatButtonModule,
     MatExpansionModule,
+    MatIconModule,
+    FlexLayoutModule,
+    MatTooltipModule,
   ],
   providers: [
     provideAnimationsAsync()
