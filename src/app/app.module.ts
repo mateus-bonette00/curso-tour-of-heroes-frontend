@@ -14,13 +14,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatIconModule,
     FlexLayoutModule,
     MatTooltipModule,
+    MatCardModule,
   ],
   providers: [
     provideAnimationsAsync()
