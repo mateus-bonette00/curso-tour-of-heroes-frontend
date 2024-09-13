@@ -16,6 +16,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -36,6 +40,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FlexLayoutModule,
     MatTooltipModule,
     MatCardModule,
+    MatListModule,
+    MatInputModule,
   ],
   providers: [
     provideAnimationsAsync()
